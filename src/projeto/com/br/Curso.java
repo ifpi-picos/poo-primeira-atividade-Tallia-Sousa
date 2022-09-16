@@ -3,7 +3,8 @@ package projeto.com.br;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Curso { private String nome;
+public class Curso {
+    private String nome;
     private String nivel;
     private int cargahoraria;
     private Professor Professor;
@@ -25,22 +26,10 @@ public class Curso { private String nome;
         return this.alunos.size();
 
     }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public String getNome() {
         return nome;
     }
 
-    public void setCargahoraria(int cargahoraria) {
-        this.cargahoraria = cargahoraria;
-    }
-
-    public int getCargahoraria() {
-        return cargahoraria;
-    }
     public Professor getProfessor(){
         return Professor;
     }
@@ -48,15 +37,11 @@ public class Curso { private String nome;
         return this.Professor.getNome();
 
     }
-    public String getNivel() {
-        return nivel;
-    }
     public List<Aluno> getAlunos(){
         return alunos;
     }
     @Override
     public String toString() {
-
         return " Nome:" + nome + "," + " Nivel: " + nivel + "," + " Carga Horaria: " + cargahoraria
                 + "," + " Professor: " + Professor.getNome();
     }}

@@ -1,8 +1,7 @@
 package projeto.com.br;
 
 public class Certificado {
-    private String nome;
-    private String email;
-    private String formacao;
+    private Aluno aluno;
+    private Curso Curso;
 
 }
